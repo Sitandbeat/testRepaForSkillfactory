@@ -85,6 +85,8 @@ studentsJournal["Билл Мюррей"] = 3
 studentsJournal["Макалей Калкин"] = nil
 
 // Считаем средний бал
-
-let points = [Int](studentsJournal.values)
-print (Double(points.reduce(0, +))/Double(points.count))
+func avaragePoints (Dict: Dictionary <String, Int>) {
+    let points = [Int](Dict.values)
+    print (Double(points.reduce(0, +))/Double(points.count))
+}
+avaragePoints(Dict: studentsJournal)
